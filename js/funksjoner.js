@@ -23,8 +23,14 @@ function leggTilHandlekurv(i) {
 //Leser handlekurvlisten fra local storage
 function lastHandlekurv() {
   let myJSON = localStorage.getItem("handlekurv"); //henter handlekurv fra localStorage
-  produkterTilHandlekurv = JSON.parse(myJSON); //tolker strengen arrayen var lagret som
-  //produktteller();
+  if (myJSON == null)
+  {
+    produkterTilHandlekurv = [];
+  }
+  else
+  {
+    produkterTilHandlekurv = JSON.parse(myJSON); //tolker strengen arrayen var lagret som
+  }
 }
 
 //henter brukerinput 
