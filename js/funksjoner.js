@@ -1,5 +1,4 @@
 let produkterTilHandlekurv 
-produkterTilHandlekurv ??= []; //Array for produktene som legges til i handlekurven
 
 //Viser antall produkter i handlevognen i menylinjen
 function produktteller() {
