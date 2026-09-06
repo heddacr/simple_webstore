@@ -1,0 +1,82 @@
+<!DOCTYPE html> <!--Forteller at vi skriver etter HTML 5 standarden-->
+<html lang="no">
+
+<head> <!--Her legges metainformasjonen-->
+  <title>Hedda's Greenhouse/kilder</title>
+  <meta charset="utf-8"> <!--tegnsettet vi bruker-->
+  <link rel="stylesheet" href="stilark/layout.css">
+</head>
+
+<body>
+  <header>
+    <figure> <img src='Medier/logo.png' alt='produktbilde'></figure>
+  </header>
+
+  <nav>
+    <ul> <!-- lager en liste -->
+      <li><a href="index.html">
+          <figure> <img src='Medier/hjemIkon.png' alt='hjem'></figure>
+        </a></li>
+      <li id="handlekurv"><a href="handlekurv.html">
+          <figure> <img src='Medier/handlekurvIkon.png' alt='handlekurv'></figure>
+      </li>
+      <li><a href="#">Herreklær</a></li>
+      <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Dameklær</a>
+        <!--Hentet fra https://www.w3schools.com/css/css_dropdowns.asp -->
+        <div class="dropdown-content">
+          <a href="kjoler.html">Kjoler</a>
+          <a href="#">Topper</a>
+          <a href="#">Bukser</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <br>
+  <p>-Noe av koden har tatt utgangspunkt fra andre nettsider. Kilder til disse er lagt som kommenater i koden. </p>
+
+
+  <footer>
+    <h3>Rettigheteter</h3>
+    <p><a href="kilder.html">Kilder</a></p>
+    <p><a href="bilder.html">Bilder</a></p>
+
+    <br>
+    <h3>Kontakt oss</h3>
+
+
+    <table> <!-- lager en tabell -->
+      <tr>
+        <!-- Lager felt for brukerinput -->
+        <td><label for="brukernavn">Navn:</label></td>
+        <td><input type="text" id="brukernavn" placeholder="Hedda Crosby"></td>
+      </tr>
+      <tr>
+        <td><label for="mail">Adresse: </label></td>
+        <td><input type="text" id="mail" placeholder="hedda.crosby@gmail.com"></td>
+      </tr>
+      <tr>
+        <td><label for="melding">Melding: </label></td>
+        <td><textarea id="melding" placeholder="Jeg lurte på om.."></textarea></td>
+      </tr>
+    </table>
+
+    <br>
+    <button onclick="sendMelding()">Send</button>
+
+    <br>
+    <p id="tilbakemeldingMelding"></p>
+    <br>
+
+  </footer>
+
+  <!--Henviser til lagrede js filer-->
+  <script src="js/produkter.js"></script>
+  <script src="js/funksjoner.js"></script>
+
+  <script>
+  </script>
+</body>
+
+</html>
